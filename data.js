@@ -454,22 +454,22 @@ console.log(objStore1CandiesAndQuantities);
 // console.log(objStore3Day1Candies);
 
 //Using the same technique, iterate over store2's sale dates data. Which day had the most total number of sales? How did you calculate this?
-var keys = Object.keys(store2['sale dates']);
-
-var objSalesByDate = {};
-
-for (var i = 0; i < keys.length ; i++) {
-  arrOfDates = store2['sale dates'][keys[i]];
-  for (var j = 0; j < arrOfDates.length; j++){
-    if (objSalesByDate[arrOfDates[j]]) {
-      ++objSalesByDate[arrOfDates[j]];
-    }
-    else {objSalesByDate[arrOfDates[j]] = 1;
-    }
-  }
-}
-
-console.log(objSalesByDate);
+// var keys = Object.keys(store2['sale dates']);
+// 
+// var objSalesByDate = {};
+// 
+// for (var i = 0; i < keys.length ; i++) {
+//   arrOfDates = store2['sale dates'][keys[i]];
+//   for (var j = 0; j < arrOfDates.length; j++){
+//     if (objSalesByDate[arrOfDates[j]]) {
+//       ++objSalesByDate[arrOfDates[j]];
+//     }
+//     else {objSalesByDate[arrOfDates[j]] = 1;
+//     }
+//   }
+// }
+// 
+// console.log(objSalesByDate);
 
 
 //After doing all of the above, see if you can do the following tasks:
@@ -514,4 +514,9 @@ console.log(objSalesByDate);
 //After creating a function to combine the data, create two additional functions, getInventoryCountSold() and getGrossProfit() which respectively get the total numbers of items sold and the total dollars from sales. Each item can optionally take a type of candy to return the numbers about that candy. If there's no argument passed, it should return the total numbers for all candy types. For example, getInventoryCountSold('Banana Bunches') should return 12.
 
 
-
+module.exports = {
+  store1: store1,
+  store2: store2,
+  store3: store3,
+  store4: store4
+};
