@@ -315,14 +315,16 @@ var store4 = {
 
 
 //With your previous loop, use it to count the total number of candies sold that day at store1. Where do you have to initialize the counter variable? Why?
-/*
-var counter = 0
-for ( var i = 0; i < janEightSales.length; i++) {
-  counter = counter + janEightSales[i][2];
-  console.log(janEightSales[i][2]);
-}
-console.log("total sales: " + counter);
-*/
+// var janEightSales = store1['2015-01-08'];
+// var arrJanEightSales = [];
+// var counter = 0
+// 
+// for ( var i = 0; i < janEightSales.length; i++) {
+//   counter = counter + janEightSales[i][2];
+//   console.log(janEightSales[i][2]);
+// }
+// console.log("total sales: " + counter);
+
 
 
 //Create a loop to iterate over the sale data from store3. Use this loop to create an array of dates contained in the sale data.
@@ -354,7 +356,7 @@ console.log("total sales: " + counter);
 // It was easy once Garan talked me through it
 
 //Use Object.keys() to get an array of the dates that candies were sold at store1.
-/* var arrStore = Object.keys(store1); */
+// var arrStore = Object.keys(store1);
 /* console.log(arrStore); */
 
 
@@ -362,11 +364,10 @@ console.log("total sales: " + counter);
 /* console.log(arrStore.length); */
 
 //Iterate over the generated array of dates. Use each date to console.log the specific sale data for the day from store1.
-/*
-for ( var i = 0; i < arrStore.length; i++) {
-  console.log(store1[arrStore[i]]);
-}
-*/
+
+// for ( var i = 0; i < arrStore.length; i++) {
+//   console.log(store1[arrStore[i]]);
+// }
 
 //Now, use the previous loop to calculate the total number of candies sold at store1. Where do you have to initialize the counter variable? Why?
 /*
